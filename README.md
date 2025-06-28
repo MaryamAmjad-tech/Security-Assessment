@@ -21,3 +21,29 @@ If you would like to download the code and try it for yourself:
 
 
 Licence: 1
+
+
+
+# Security Assessment - Week 1
+
+## Description
+This repository contains a Node.js mock application used for basic vulnerability assessment during Week 1 of the Cybersecurity lab.
+
+## Tasks Completed
+✅ Cloned and ran the application locally (`npm install`, `npm start`)  
+✅ Tested on `http://localhost:3000`  
+✅ Performed vulnerability assessment:
+- OWASP ZAP scan
+- XSS test (`<script>alert('XSS')</script>`)
+- SQL Injection test (`admin' OR '1'='1`)
+- Checked for weak password storage
+- Checked for misconfigurations
+
+## Findings
+- To be added here after your vulnerability testing results.
+
+## Areas of Improvement
+- Sanitize user inputs to prevent XSS
+- Use parameterized queries to prevent SQL Injection
+- Implement proper password hashing
+- Apply authentication middleware on protected routes
